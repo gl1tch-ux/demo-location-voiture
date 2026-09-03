@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Voitures au Maroc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Location<span>Maroc</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Accueil</a></li>
+                    <li><a href="#fleet">Nos voitures</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">A propos</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservation" class="btn btn-primary" style="padding: 8px 15px;">Reserver</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Louez votre voiture<br>facilement au Maroc</h1>
+            <p>Découvrez nos offres exceptionnelles et profitez de la liberté de mouvement.</p>
+            <div class="hero-buttons">
+                <a href="#fleet" class="btn btn-primary">Voir nos voitures</a>
+                <a href="#reservation" class="btn btn-outline">Reserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Services</h2>
+                <span></span>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Location courte durée</h3>
+                    <p>Idéal pour vos week-ends ou courts déplacements. Flexibilité totale.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Location longue durée</h3>
+                    <p>Des tarifs préférentiels pour les locations mensuelles et annuelles.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck-pickup"></i>
+                    <h3>Livraison de voiture</h3>
+                    <p>Nous livrons le véhicule directement à votre domicile ou hôtel.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Transfert aéroport</h3>
+                    <p>Accueil et service VIP à tous les aéroports du Maroc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why-us" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi nous ?</h2>
+                <span></span>
+            </div>
+            <div class="why-us-grid">
+                <div class="feature-item">
+                    <i class="fas fa-tags"></i>
+                    <h4>Prix compétitifs</h4>
+                    <p>Les meilleurs tarifs du marché.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-car-side"></i>
+                    <h4>Véhicules entretenus</h4>
+                    <p>Flotte récente et propre.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Réservation rapide</h4>
+                    <p>Processus simplifié en ligne.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>Assistance client</h4>
+                    <p>Support disponible 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet / Nos Voitures -->
+    <section id="fleet" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Voitures</h2>
+                <span></span>
+            </div>
+            <div class="fleet-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/dacia_logan/400/250" alt="Dacia Logan" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Dacia Logan</h3>
+                            <span class="price">250 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Manuelle</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Diesel</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Dacia Logan')">Reserver</a>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/dacia_sandero/400/250" alt="Dacia Sandero" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Dacia Sandero</h3>
+                            <span class="price">280 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Manuelle</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Diesel</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Dacia Sandero')">Reserver</a>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/renault_clio/400/250" alt="Renault Clio" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Renault Clio</h3>
+                            <span class="price">300 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Manuelle</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Essence</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Renault Clio')">Reserver</a>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/peugeot_208/400/250" alt="Peugeot 208" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Peugeot 208</h3>
+                            <span class="price">320 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Manuelle</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Essence</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Peugeot 208')">Reserver</a>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/dacia_duster/400/250" alt="Dacia Duster" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Dacia Duster</h3>
+                            <span class="price">450 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Manuelle</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Diesel</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Dacia Duster')">Reserver</a>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card">
+                    <img src="https://picsum.photos/seed/vw_golf/400/250" alt="Volkswagen Golf" class="car-image">
+                    <div class="car-info">
+                        <div class="car-title">
+                            <h3>Volkswagen Golf</h3>
+                            <span class="price">500 DH/jour</span>
+                        </div>
+                        <div class="car-specs">
+                            <span class="spec-item"><i class="fas fa-user"></i> 5 Places</span>
+                            <span class="spec-item"><i class="fas fa-cog"></i> Automatique</span>
+                            <span class="spec-item"><i class="fas fa-gas-pump"></i> Essence</span>
+                        </div>
+                        <a href="#reservation" class="btn btn-primary reserve-btn" onclick="selectCar('Volkswagen Golf')">Reserver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: #fff;">Réservation</h2>
+                <span></span>
+            </div>
+            <div class="reservation-form">
+                <form onsubmit="event.preventDefault(); alert('Demande envoyée avec succès!');">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Date départ</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date retour</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Voiture</label>
+                            <select id="car-select" required>
+                                <option value="" disabled selected>Choisir une voiture</option>
+                                <option value="Dacia Logan">Dacia Logan</option>
+                                <option value="Dacia Sandero">Dacia Sandero</option>
+                                <option value="Renault Clio">Renault Clio</option>
+                                <option value="Peugeot 208">Peugeot 208</option>
+                                <option value="Dacia Duster">Dacia Duster</option>
+                                <option value="Volkswagen Golf">Volkswagen Golf</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nom complet</label>
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone / WhatsApp</label>
+                            <input type="tel" placeholder="+212 6..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary">Envoyer demande</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galerie</h2>
+                <span></span>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/morocco1/400/300" alt="Gallery 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/morocco_car_2/400/300" alt="Gallery 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/morocco_road_3/400/300" alt="Gallery 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/morocco_desert/400/300" alt="Gallery 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis / Reviews -->
+    <section id="avis" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Avis Clients</h2>
+                <span></span>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p class="review-text">"Service impeccable, voiture propre et récente. Je recommande vivement pour un voyage au Maroc."</p>
+                    <div class="reviewer">
+                        <img src="https://picsum.photos/seed/user1/100/100" alt="Client">
+                        <div class="reviewer-info">
+                            <h5>Youssef Amrani</h5>
+                            <small>Voyageur</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <p class="review-text">"Excellente communication avec l'équipe. La voiture a été livrée à temps à l'hôtel."</p>
+                    <div class="reviewer">
+                        <img src="https://picsum.photos/seed/user2/100/100" alt="Client">
+                        <div class="reviewer-info">
+                            <h5>Sarah Benali</h5>
+                            <small>Touriste</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p class="review-text">"Prix très corrects pour la qualité proposée. Pas de mauvaise surprise."</p>
+                    <div class="reviewer">
+                        <img src="https://picsum.photos/seed/user3/100/100" alt="Client">
+                        <div class="reviewer-info">
+                            <h5>Karim Tazi</h5>
+                            <small>Business</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-nous</h2>
+                <span></span>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h5>Adresse</h5>
+                            <p>Boulevard Mohammed V, Casablanca, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h5>Téléphone</h5>
+                            <p>+212 5 22 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h5>WhatsApp</h5>
+                            <p>+212 6 00 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p>contact@locationmaroc.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.277253964469!2d-7.629373684801035!3d33.57310948071454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7c642bf5453e89%3A0x8226d075d15f6e68!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background: var(--primary-color); color: #fff; padding: 50px 0; text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">Prêt à partir ?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Réservez dès maintenant votre véhicule de confiance.</p>
+            <a href="#reservation" class="btn btn-outline" style="border-color: #fff; color: #fff;">Reserver maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">Location<span>Maroc</span></div>
+                    <p style="margin-top: 20px; color: #bbb;">
+                        Votre partenaire de confiance pour la location de voitures au Maroc. Qualité, sécurité et prix imbattables.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#fleet">Nos voitures</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#why-us">A propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 LocationMaroc. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
